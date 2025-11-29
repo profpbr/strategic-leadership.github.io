@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question Bank | Strategic Leadership for Sustainable Entrepreneurship</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f3f9fb;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    user-select: none; /* disables text selection */
+  }
+
+  /* ---------- HEADER ---------- */
+  header {
+    background: linear-gradient(90deg, #00334d, #006680);
+    color: white;
+    padding: 1.4em 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  }
+  header img {
+    height: 65px;
+    border-radius: 8px;
+  }
+  header h1 { margin: 10px 0 0; font-size: 1.9em; }
+  header p { margin: 0; font-size: 1em; opacity: 0.9; }
+
+  /* ---------- NAVIGATION ---------- */
+  nav {
+    background: #004d66;
+    text-align: center;
+    padding: 0.8em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 0 14px;
+    font-weight: 600;
+    font-size: 0.95em;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.3s;
+  }
+  nav a:hover { background: #00a8cc; color: #fff; }
+  nav a.active { background: #007799; color: #fff; }
+
+  /* ---------- SECTION ---------- */
+  section {
+    padding: 25px;
+    background: white;
+    margin: 25px auto;
+    max-width: 950px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  }
+  h2 { color: #004466; border-left: 5px solid #00a8cc; padding-left: 10px; }
+  .notice {
+    background: #e6f9ff;
+    padding: 10px 15px;
+    border-left: 4px solid #00a8cc;
+    margin-bottom: 15px;
+    border-radius: 6px;
+  }
+
+  /* ---------- IMAGES ---------- */
+  figure {
+    margin: 0 0 20px;
+  }
+  figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+  }
+
+  .question-image {
+    width: 100%;
+    border: 2px solid #004466;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: block;
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeInUp 0.6s ease forwards;
+  }
+  @keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ---------- OVERLAY ---------- */
+  .overlay-protect {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 10;
+    background: transparent;
+    pointer-events: none;
+  }
+
+  .back-btn {
+    display: inline-block;
+    background: #006680;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .back-btn:hover { background: #004466; }
+
+  /* ---------- WATERMARK ---------- */
+  .watermark {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 5;
+    pointer-events: none;
+    background: url('logo.png') center center no-repeat;
+    background-size: 500px auto;
+    opacity: 0.08;
+  }
+
+  /* ---------- BLACKOUT ---------- */
+  .blackout {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: black;
+    z-index: 9999;
+    opacity: 0.9;
+    display: none;
+  }
+
+  footer {
+    text-align: center;
+    background: #00334d;
+    color: #eee;
+    padding: 15px;
+    margin-top: 40px;
+  }
+</style>
+</head>
+
+<body oncontextmenu="return false;">
+  <header>
+    <img src="logo.png" alt="Jain University Logo">
+    <h1>Strategic Leadership for Sustainable Entrepreneurship</h1>
+    <p>Question Bank | Jain (Deemed-to-be University)</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Syllabus</a>
+    <a href="tlep.html">TLEP</a>
+    <a href="module1.html">Module 1</a>
+    <a href="module2.html">Module 2</a>
+    <a href="module3.html">Module 3</a>
+    <a href="module4.html">Module 4</a>
+    <a href="module5.html">Module 5</a>
+    <a href="questionbank.html" class="active">Question Bank</a>
+    <a href="queries.html">Queries</a>
+  </nav>
+
+  <section>
+    <h2>📘 Question Bank (Protected View)</h2>
+    <p class="notice">
+      Viewing is restricted for academic integrity — downloading, printing, and screenshots are discouraged.
+    </p>
+
+    <div style="position: relative;">
+      <!-- Question Bank Images -->
+      <figure>
+        <img src="qb-page1.png" alt="Question Bank Page 1" class="question-image">
+        <figcaption>Page 1 of 4</figcaption>
+      </figure>
+      <figure>
+        <img src="qb-page2.png" alt="Question Bank Page 2" class="question-image">
+        <figcaption>Page 2 of 4</figcaption>
+      </figure>
+      <figure>
+        <img src="qb-page3.png" alt="Question Bank Page 3" class="question-image">
+        <figcaption>Page 3 of 4</figcaption>
+      </figure>
+      <figure>
+        <img src="qb-page4.png" alt="Question Bank Page 4" class="question-image">
+        <figcaption>Page 4 of 4</figcaption>
+      </figure>
+      <div class="overlay-protect"></div>
+    </div>
+
+    <div style="text-align:center;">
+      <a href="index.html" class="back-btn">🏠 Back to Home (Syllabus)</a>
+    </div>
+  </section>
+
+  <div class="watermark"></div>
+  <div class="blackout" id="blackout"></div>
+
+  <footer>
+    © 2025 Prof. P. B. Rao | Strategic Leadership for Sustainable Entrepreneurship | Jain (Deemed-to-be University)
+  </footer>
+
+  <script>
+    // Disable right-click & block common shortcuts
+    document.addEventListener('keydown', e => {
+      const blocked = ['s','p','u','c','x','a'];
+      if ((e.ctrlKey && blocked.includes(e.key.toLowerCase())) || e.key === 'PrintScreen') {
+        e.preventDefault();
+        showWarning();
+      }
+    });
+
+    // Show warning message on screenshot or shortcut attempt
+    function showWarning() {
+      const warn = document.createElement('div');
+      warn.textContent = "⚠️ You are not supposed to take screenshots or download this academic material.";
+      warn.style.position = 'fixed';
+      warn.style.top = '50%';
+      warn.style.left = '50%';
+      warn.style.transform = 'translate(-50%, -50%)';
+      warn.style.background = 'rgba(0,0,0,0.85)';
+      warn.style.color = 'white';
+      warn.style.padding = '20px 30px';
+      warn.style.borderRadius = '10px';
+      warn.style.fontSize = '1rem';
+      warn.style.zIndex = '10000';
+      warn.style.textAlign = 'center';
+      document.body.appendChild(warn);
+      setTimeout(() => warn.remove(), 2500);
+    }
+
+    // Clear clipboard periodically
+    setInterval(() => navigator.clipboard.writeText(''), 1000);
+  </script>
+</body>
+</html>

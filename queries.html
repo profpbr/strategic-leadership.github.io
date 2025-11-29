@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Queries | Strategic Leadership for Sustainable Entrepreneurship</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; margin: 0; background: #f3f9fb; color: #333; line-height: 1.6; }
+
+    /* HEADER WITH LOGO */
+    header {
+      background: linear-gradient(90deg, #00334d, #006680);
+      color: white;
+      padding: 1.5em 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+    }
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .logo {
+      height: 70px;
+      width: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(255,255,255,0.3);
+    }
+    .header-text h1 { font-size: 1.9em; margin: 0; letter-spacing: 1px; }
+    .header-text p { margin: 0; opacity: 0.9; font-size: 1em; }
+    @media (max-width: 768px) {
+      .logo { height: 55px; }
+      .header-text h1 { font-size: 1.4em; }
+    }
+
+    /* NAVIGATION BAR */
+    nav { background: #004d66; text-align: center; padding: 0.8em 0; position: sticky; top: 0; z-index: 1000; }
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    nav a:hover, nav a.active { background: #00a8cc; color: #fff; }
+
+    /* MAIN SECTION */
+    section {
+      padding: 25px;
+      background: white;
+      margin: 25px auto;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    h2 { color: #004466; border-left: 5px solid #00a8cc; padding-left: 10px; }
+
+    /* FORM */
+    form { display: flex; flex-direction: column; gap: 15px; margin-top: 15px; }
+    label { font-weight: 500; }
+    input, textarea {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    button {
+      background: #006680;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover { background: #004466; }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      background: #00334d;
+      color: #eee;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    /* BUTTON BACK TO HOME */
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #006680;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .back-btn:hover { background: #004466; }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER WITH LOGO -->
+  <header>
+    <div class="header-container">
+      <img src="logo.png" alt="Jain University Logo" class="logo">
+      <div class="header-text">
+        <h1>Strategic Leadership for Sustainable Entrepreneurship</h1>
+        <p>Queries | Jain (Deemed-to-be University)</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Syllabus</a>
+    <a href="tlep.html">TLEP</a>
+    <a href="module1.html">Module 1</a>
+    <a href="module2.html">Module 2</a>
+    <a href="module3.html">Module 3</a>
+    <a href="module4.html">Module 4</a>
+    <a href="module5.html">Module 5</a>
+    <a href="questionbank.html">Question Bank</a>
+    <a href="queries.html" class="active">Queries</a>
+  </nav>
+
+  <!-- QUERY FORM -->
+  <section>
+    <h2>📬 Submit Your Query</h2>
+    <p>Please fill in the form below. Your query will be sent directly to <b>Dr. P. B. Rao</b>.</p>
+
+    <form action="https://formspree.io/f/xyznnljn" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="_replyto" placeholder="Enter your email" required>
+
+      <label for="query">Your Query:</label>
+      <textarea id="query" name="query" rows="5" placeholder="Type your query here..." required></textarea>
+
+      <button type="submit">📨 Submit Query</button>
+    </form>
+
+    <div style="text-align:center;">
+      <a href="index.html" class="back-btn">🏠 Back to Home (Syllabus)</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Prof. P. B. Rao | Strategic Leadership for Sustainable Entrepreneurship | Jain (Deemed-to-be University)
+  </footer>
+</body>
+</html>
